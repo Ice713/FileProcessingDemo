@@ -5,7 +5,7 @@ Public Class Form1
         Try
             Dim filePath As String = "sample.txt" ' File Location
 
-            Using writer As New StreamWriter(filePath)
+            Using writer As New StreamWriter(filePath, True) ' True to append
                 writer.WriteLine("Hello, this is a test file!")
                 writer.WriteLine("Second line of the text.")
             End Using
