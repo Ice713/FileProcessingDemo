@@ -24,6 +24,8 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.ButtonWrite = New System.Windows.Forms.Button()
         Me.ButtonRead = New System.Windows.Forms.Button()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.ButtonReadPerLine = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ButtonWrite
@@ -44,11 +46,30 @@ Partial Class Form1
         Me.ButtonRead.Text = "Read"
         Me.ButtonRead.UseVisualStyleBackColor = True
         '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(201, 166)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(120, 95)
+        Me.ListBox1.TabIndex = 2
+        '
+        'ButtonReadPerLine
+        '
+        Me.ButtonReadPerLine.Location = New System.Drawing.Point(327, 166)
+        Me.ButtonReadPerLine.Name = "ButtonReadPerLine"
+        Me.ButtonReadPerLine.Size = New System.Drawing.Size(105, 39)
+        Me.ButtonReadPerLine.TabIndex = 3
+        Me.ButtonReadPerLine.Text = "Read Per Line"
+        Me.ButtonReadPerLine.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ButtonReadPerLine)
+        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.ButtonRead)
         Me.Controls.Add(Me.ButtonWrite)
         Me.Name = "Form1"
@@ -59,4 +80,6 @@ Partial Class Form1
 
     Friend WithEvents ButtonWrite As Button
     Friend WithEvents ButtonRead As Button
+    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents ButtonReadPerLine As Button
 End Class
